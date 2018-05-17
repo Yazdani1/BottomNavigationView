@@ -50,20 +50,20 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
 
                     case R.id.home:
-
-                        Toast.makeText(getApplicationContext(),"Kaj kore",Toast.LENGTH_SHORT).show();
-
+                        navigationItemView.setItemBackgroundResource(R.color.home);
                         setFragment(homefragment);
                         
                     return true;
 
                     case R.id.cart:
+                        navigationItemView.setItemBackgroundResource(R.color.cart);
 
                         setFragment(cartFragment);
                     return true;
 
 
                     case R.id.notification:
+                        navigationItemView.setItemBackgroundResource(R.color.notification);
 
                         setFragment(notificationFragment);
                     return true;
